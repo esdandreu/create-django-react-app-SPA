@@ -1,0 +1,24 @@
+{% load relative_path %} {%  extends "../../common/templates/common/base.html" %}
+{% load static %}
+
+{% block headcontent %}
+    <title>Tasks</title>
+    <link href="{% static '../static/App/css/stylesheet.css' %}" rel="stylesheet">
+{% endblock headcontent %}
+
+
+{% block bodycontent %}
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>
+        <div class="container container--main">
+            <h2>This is common for all task types</h2>
+            <div class=" container container--task">
+                {% block maincontent %}
+
+                {% endblock maincontent %}
+            </div>
+        </div>
+    </main>
+    <footer>Footer</footer>
+{% endblock bodycontent %}

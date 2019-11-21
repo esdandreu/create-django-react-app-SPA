@@ -1,0 +1,30 @@
+{%  extends "Tasks/taskBase.html" %}
+{% load static %}
+
+{% block headcontent %}
+    <link href="{% static '../../static/App/css/taskEmail.css' %}" rel="stylesheet">
+{% endblock headcontent %}
+
+{% block maincontent %}
+    <div class="grid-container container--taskEmail">
+        <div class="grid-container container--emailEditor">
+            <div class="row grid-container container--emailReader">
+                {% include "Tasks/taskEmail/emailReader.html" %}
+            </div>
+            <div class="row grid-container container--emailWritter">
+                {% include "Tasks/taskEmail/emailWritter.html" %}
+            </div>
+        </div>
+        <div class="container container--streak">
+            <div>
+                <p>Hola streak</p>
+                <p>Hola streak</p>
+                <p>Hola streak</p>
+                <p>Hola streak</p>
+            </div>
+            {% block streak %}
+
+            {% endblock streak %}
+        </div>
+    </div>
+{% endblock maincontent %}
