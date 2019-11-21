@@ -62,7 +62,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8000'
 )
 
-ROOT_URLCONF = 'email_management.urls'
+ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
     {
