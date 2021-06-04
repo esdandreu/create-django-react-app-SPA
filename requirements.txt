@@ -5,7 +5,7 @@ chardet==3.0.4
 coverage==4.5.4
 cryptography==2.8
 defusedxml==0.6.0
-Django==2.2.5
+Django==2.2.21
 django-cors-headers==3.2.0
 django-mailbox==4.8.1
 django-webpack-loader==0.6.0
